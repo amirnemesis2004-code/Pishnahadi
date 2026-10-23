@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دیجی‌مارکت | فروشگاه آنلاین</title>
+<meta name="description" content="فروشگاه اینترنتی با تخفیف روزانه، سبد خرید، کد تخفیف، پرداخت آنلاین و پنل مدیریت">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f3fb;--sf:#fff;--tx:#161432;--mu:#6b6a85;--br:#e3e1f2;--pr:#4c3bcf;--p2:#8a4dff;--pt:#fff;--ac:#ffd23f;--ok:#12a36b;--dn:#e0455a;color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f0e22;--sf:#1a1838;--tx:#efeefc;--mu:#a3a1c4;--br:#2e2b58;--pr:#8c7dff;--p2:#c28bff;--pt:#120f33;--ok:#3fd49b;--dn:#ff7387;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f0e22;--sf:#1a1838;--tx:#efeefc;--mu:#a3a1c4;--br:#2e2b58;--pr:#8c7dff;--p2:#c28bff;--pt:#120f33;--ok:#3fd49b;--dn:#ff7387;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.8}
+button{font:inherit;cursor:pointer;color:inherit}:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.wrap{max-width:1140px;margin:auto;padding:0 16px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--sf) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--br)}
+.bar{display:flex;align-items:center;gap:8px;height:64px}
+.logo{font-weight:900;font-size:21px;background:linear-gradient(90deg,var(--pr),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent;margin-left:auto;white-space:nowrap}
+.ib{position:relative;width:42px;height:42px;border-radius:12px;border:1px solid var(--br);background:var(--sf);font-size:18px}
+.ib b{position:absolute;top:-6px;left:-6px;background:var(--ac);color:#161432;border-radius:99px;min-width:20px;height:20px;font-size:12px;display:grid;place-items:center}
+.btn{border:0;border-radius:12px;padding:10px 20px;background:linear-gradient(135deg,var(--pr),var(--p2));color:var(--pt);font-weight:800;transition:transform .15s}
+.btn:active{transform:scale(.96)}.btn.alt{background:transparent;color:var(--tx);border:1px solid var(--br)}.btn.sm{padding:3px 10px;font-size:13px}.btn[disabled]{opacity:.45}
+.hero{margin:18px 0;border-radius:26px;padding:40px 28px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#8a4dff,transparent 55%),radial-gradient(circle at 90% 90%,#ff5c8a,transparent 50%),#2a1f8f}
+.hero h1{font-size:clamp(27px,6vw,48px);line-height:1.35;margin:0 0 10px;font-weight:900;max-width:12em}
+.hero p{margin:0 0 20px;opacity:.9;max-width:30em}
+.hero .btn{background:var(--ac);color:#161432}
+.fl{position:absolute;left:18px;top:14px;font-size:clamp(46px,12vw,90px);opacity:.9;display:grid;grid-template-columns:1fr 1fr;gap:4px;transform:rotate(-8deg);pointer-events:none}
+.cd{display:flex;gap:8px;margin:0 0 20px;direction:ltr;width:max-content}
+.cd div{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:12px;padding:4px 12px;text-align:center;min-width:58px;font-weight:800;font-size:20px;line-height:1.3}
+.cd small{display:block;font-size:11px;font-weight:400}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:22px 0}
+.ct{border:1px solid var(--br);border-radius:16px;padding:14px 8px;background:var(--sf);text-align:center;font-weight:600;transition:.2s}
+.ct span{display:block;font-size:30px}.ct[aria-pressed=true]{border-color:var(--pr);box-shadow:0 0 0 2px var(--pr) inset}
+.tool{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin:6px 0 16px}
+.tool h2{margin:0;font-size:22px}
+input,select{padding:10px 12px;border-radius:12px;border:1px solid var(--br);background:var(--sf);color:var(--tx);font:inherit;width:100%;margin:4px 0 10px}
+.tool select,.tool input{width:auto;margin:0}.sr{flex:1 1 220px;max-width:380px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:16px}
+.card{background:var(--sf);border:1px solid var(--br);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -14px color-mix(in srgb,var(--pr) 55%,transparent)}
+.pic{height:150px;display:grid;place-items:center;font-size:66px;position:relative;cursor:pointer}
+.dis{position:absolute;top:10px;right:10px;background:var(--dn);color:#fff;border-radius:99px;padding:0 10px;font-size:13px;font-weight:800}
+.hrt{position:absolute;top:8px;left:8px;width:34px;height:34px;border-radius:50%;border:0;background:var(--sf);font-size:16px}
+.cb{padding:12px 14px 14px;display:flex;flex-direction:column;gap:2px;flex:1}
+.cb small{color:var(--mu)}.st{color:#f5a623;font-size:13px}.st i{color:var(--mu);font-style:normal}
+.price{font-weight:900;font-size:17px;margin:auto 0 8px}.old{color:var(--mu);text-decoration:line-through;font-weight:400;font-size:13px;margin-left:6px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:40px 0}
+.strip div{background:var(--sf);border:1px solid var(--br);border-radius:16px;padding:14px 16px;font-size:14px;color:var(--mu)}.strip b{display:block;color:var(--tx);font-size:16px}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.rev blockquote{margin:0;background:var(--sf);border:1px solid var(--br);border-radius:18px;padding:16px;font-size:14px}.rev cite{display:block;margin-top:8px;color:var(--mu);font-style:normal}
+.nl{margin:40px 0;border-radius:22px;padding:28px;background:linear-gradient(135deg,var(--pr),var(--p2));color:#fff;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.nl h3{margin:0;font-size:20px}.nl form{display:flex;gap:8px;flex:1 1 280px;max-width:440px}.nl input{margin:0;color:#161432;background:#fff}.nl .btn{background:var(--ac);color:#161432}
+footer{background:var(--sf);border-top:1px solid var(--br);padding:28px 0;color:var(--mu);font-size:14px}
+.fg{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between}.fg b{color:var(--tx)}
+.bd{display:inline-grid;place-items:center;width:86px;height:86px;border:1px dashed var(--mu);border-radius:12px;font-size:12px;text-align:center;margin-left:8px}
+dialog{border:1px solid var(--br);border-radius:22px;background:var(--sf);color:var(--tx);width:min(94vw,480px);padding:20px;max-height:90vh}
+dialog::backdrop{background:rgba(10,8,40,.6);backdrop-filter:blur(3px)}
+#cartD{position:fixed;margin:0;inset:0 auto 0 0;height:100dvh;max-height:100dvh;width:min(92vw,420px);border-radius:0 22px 22px 0;display:none;flex-direction:column}
+#cartD[open]{display:flex}#cartL{flex:1;overflow:auto}
+.row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--br)}.row>span:first-child{flex:1}
+.qty{display:flex;align-items:center;gap:8px}.qty button{width:30px;height:30px;border-radius:9px;border:1px solid var(--br);background:var(--bg)}
+.ship{background:var(--bg);border-radius:12px;padding:10px 12px;font-size:13px;margin-bottom:8px}
+.pg{height:8px;background:var(--br);border-radius:9px;overflow:hidden;margin-top:6px}.pg i{display:block;height:100%;background:linear-gradient(90deg,var(--ok),var(--ac));transition:width .4s}
+.cp{display:flex;gap:8px;margin:8px 0}.cp input{margin:0}
+.tl{display:flex;justify-content:space-between;color:var(--mu);font-size:14px}.tot{display:flex;justify-content:space-between;font-weight:900;font-size:19px;padding:8px 0 12px}
+.pay{display:flex;gap:8px;margin-bottom:12px}.pay label{flex:1;border:1px solid var(--br);border-radius:12px;padding:8px;text-align:center;cursor:pointer;color:var(--tx);font-size:14px}.pay input{width:auto;margin:0 0 0 4px}
+label{font-size:14px;color:var(--mu)}
+.qv{font-size:96px;text-align:center;border-radius:18px;margin-bottom:10px}
+#admin{display:none;padding:24px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.stats div{background:linear-gradient(135deg,var(--pr),var(--p2));color:#fff;border-radius:16px;padding:14px;font-size:13px}.stats b{display:block;font-size:22px}
+.tbl{width:100%;border-collapse:collapse;font-size:14px;background:var(--sf);border-radius:14px;overflow:hidden}.tbl th,.tbl td{padding:9px 12px;border-bottom:1px solid var(--br);text-align:right}.ovx{overflow-x:auto}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0 10px}
+.toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:10px 20px;border-radius:14px;display:none;z-index:30;font-size:14px}
+#top{position:fixed;bottom:20px;right:16px;display:none;z-index:8}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<span class="logo">🛍️ دیجی‌مارکت</span>
+<button class="ib" id="th" aria-label="تغییر تم">🌓</button>
+<button class="ib" id="admB" aria-label="پنل مدیریت">⚙️</button>
+<button class="ib" id="wlB" aria-label="علاقه‌مندی‌ها">♥<b id="wc">0</b></button>
+<button class="ib" id="cartB" aria-label="سبد خرید">🛒<b id="cnt">0</b></button>
+</div></header>
+
+<main id="shop" class="wrap">
+<section class="hero">
+<div class="fl" aria-hidden="true"><span>🎧</span><span>⌚</span><span>👟</span><span>☕</span></div>
+<h1>تخفیف شگفت‌انگیز امروز، فقط تا نیمه‌شب</h1>
+<p>تا ۳۰٪ تخفیف روی پرفروش‌ترین‌ها. با کد <b>OFF10</b> ده درصد تخفیف اضافه بگیرید.</p>
+<div class="cd" id="cd" aria-label="زمان باقی‌مانده"></div>
+<a href="#list"><button class="btn">مشاهده محصولات</button></a>
+</section>
+<div class="cats" id="cats"></div>
+<section id="list">
+<div class="tool"><h2>محصولات</h2>
+<input class="sr" id="q" type="search" placeholder="جستجوی محصول…" aria-label="جستجو">
+<select id="so" aria-label="مرتب‌سازی"><option value="p">پرفروش‌ترین</option><option value="a">ارزان‌ترین</option><option value="e">گران‌ترین</option><option value="r">بهترین امتیاز</option></select></div>
+<div class="grid" id="grid"></div></section>
+<div class="strip">
+<div><b>🔒 پرداخت امن</b>اتصال به درگاه بانکی شاپرک</div>
+<div><b>🚚 ارسال سریع</b>تحویل ۲ تا ۴ روز کاری</div>
+<div><b>✅ ضمانت اصالت</b>بازگشت کالا تا ۷ روز</div>
+<div><b>💬 پشتیبانی</b>پاسخگویی ۹ تا ۲۱</div></div>
+<h2>نظر مشتریان</h2>
+<div class="rev">
+<blockquote>بسته‌بندی عالی بود و دو روزه رسید. قیمت‌ها هم از جاهای دیگه بهتره.<cite>سارا م. · تهران</cite></blockquote>
+<blockquote>هدفون دقیقاً مثل توضیحات بود. پشتیبانی سریع جواب داد.<cite>علی ر. · اصفهان</cite></blockquote>
+<blockquote>تخفیف روزانه‌شون واقعیه. دفعه سوم هست که خرید می‌کنم.<cite>نگار ک. · شیراز</cite></blockquote></div>
+<div class="nl"><h3>از تخفیف‌ها زودتر باخبر شو</h3><form id="nf"><input id="ne" type="email" placeholder="ایمیل شما" aria-label="ایمیل" required><button class="btn">عضویت</button></form></div>
+</main>
+
+<section id="admin" class="wrap">
+<div style="display:flex;justify-content:space-between;align-items:center"><h2>پنل مدیریت</h2><button class="btn alt" id="back">بازگشت به فروشگاه</button></div>
+<div class="stats" id="stats"></div>
+<h3>افزودن محصول</h3>
+<div class="fgrid"><div><label>نام</label><input id="an"></div><div><label>قیمت (تومان)</label><input id="ap" type="number" min="0"></div><div><label>دسته</label><input id="ac" list="dl"><datalist id="dl"></datalist></div><div><label>آیکن</label><input id="ae" maxlength="2" value="📦"></div></div>
+<button class="btn" id="addP">افزودن محصول</button>
+<h3>محصولات</h3><div class="ovx"><table class="tbl" id="pt"></table></div>
+<h3>سفارش‌ها</h3><div class="ovx"><table class="tbl" id="ot"></table></div>
+</section>
+
+<footer><div class="wrap fg">
+<div><b>دیجی‌مارکت</b><br>تهران، خیابان نمونه، پلاک ۱۲<br>۰۲۱-۱۲۳۴۵۶۷۸ · info@example.ir</div>
+<div><b>راهنما</b><br>شرایط ارسال · بازگشت کالا · قوانین · حریم خصوصی</div>
+<div><span class="bd">نماد اعتماد<br>(اینماد)</span><span class="bd">شاپرک</span></div></div></footer>
+
+<button class="btn" id="top" aria-label="بازگشت به بالا">↑</button>
+
+<dialog id="cartD"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">سبد خرید</h3><button class="btn alt sm" data-close>بستن</button></div>
+<div class="ship" id="ship"></div><div id="cartL"></div>
+<div class="cp"><input id="cpi" placeholder="کد تخفیف (OFF10)" aria-label="کد تخفیف"><button class="btn alt" id="cpb">اعمال</button></div>
+<div class="tl"><span>جمع جزء</span><span id="s1"></span></div><div class="tl"><span>تخفیف</span><span id="s2"></span></div><div class="tl"><span>هزینه ارسال</span><span id="s3"></span></div>
+<div class="tot"><span>مبلغ قابل پرداخت</span><span id="s4"></span></div>
+<button class="btn" id="goPay">ادامه و پرداخت</button></dialog>
+
+<dialog id="payD"><h3 style="margin-top:0">تکمیل سفارش</h3>
+<label>نام و نام خانوادگی</label><input id="cn" autocomplete="name">
+<label>موبایل</label><input id="cm" inputmode="tel" autocomplete="tel" placeholder="09123456789">
+<label>آدرس</label><input id="ca" autocomplete="street-address">
+<label>درگاه پرداخت</label>
+<div class="pay"><label><input type="radio" name="g" value="زرین‌پال" checked>زرین‌پال</label><label><input type="radio" name="g" value="زیبال">زیبال</label></div>
+<div class="tot"><span>مبلغ قابل پرداخت</span><span id="s5"></span></div>
+<div style="display:flex;gap:8px"><button class="btn" id="pay" style="flex:1">پرداخت امن</button><button class="btn alt" data-close>انصراف</button></div>
+<small style="color:var(--mu)">در نسخه نهایی به درگاه بانکی هدایت می‌شوید.</small></dialog>
+
+<dialog id="qvD"></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const $=s=>document.querySelector(s),fa=n=>Number(n).toLocaleString('fa-IR'),T=n=>fa(n)+' تومان';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const seed=[
+{id:1,n:'هدفون بی‌سیم نویزکنسلینگ',p:1450000,o:1790000,c:'دیجیتال',e:'🎧',r:4.7,s:320,d:'۳۰ ساعت شارژدهی و حذف نویز فعال.'},
+{id:2,n:'ساعت هوشمند ورزشی',p:2900000,o:3400000,c:'دیجیتال',e:'⌚',r:4.5,s:210,d:'ضدآب با پایش ضربان و خواب.'},
+{id:3,n:'پاوربانک ۲۰۰۰۰ میلی‌آمپر',p:890000,c:'دیجیتال',e:'🔋',r:4.3,s:540,d:'شارژ سریع ۶۵ وات با دو خروجی.'},
+{id:4,n:'کوله‌پشتی ضدآب',p:760000,c:'مد و پوشاک',e:'🎒',r:4.6,s:180,d:'جادار با جیب لپ‌تاپ و کیف ضدسرقت.'},
+{id:5,n:'کفش اسپرت سبک',p:1980000,o:2600000,c:'مد و پوشاک',e:'👟',r:4.4,s:260,d:'زیره طبی و پارچه تنفس‌پذیر.'},
+{id:6,n:'قهوه‌ساز برقی',p:3200000,c:'لوازم خانه',e:'☕',r:4.8,s:140,d:'آماده‌سازی قهوه در ۳ دقیقه.'},
+{id:7,n:'چراغ مطالعه LED',p:420000,c:'لوازم خانه',e:'💡',r:4.2,s:410,d:'سه حالت نور با پایه تاشو.'},
+{id:8,n:'ست لیوان سرامیکی',p:350000,o:450000,c:'لوازم خانه',e:'🍵',r:4.1,s:90,d:'شش‌تایی، مناسب مایکروفر.'},
+{id:9,n:'ست مراقبت پوست',p:1250000,c:'زیبایی',e:'🧴',r:4.6,s:230,d:'سه‌تکه با ضدآفتاب و مرطوب‌کننده.'},
+{id:10,n:'عطر ادکلن مردانه',p:2100000,o:2450000,c:'زیبایی',e:'🌸',r:4.5,s:150,d:'ماندگاری بالا، ۱۰۰ میلی‌لیتر.'}];
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let P=ld('p2',seed),cart=ld('c2',{}),W=ld('w2',[]),O=ld('o2',[]),cat='همه',cp=0,wl=false;
+const toast=m=>{const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(t.h);t.h=setTimeout(()=>t.style.display='none',2200)};
+const hue=c=>{let h=0;for(const x of c)h=(h*31+x.charCodeAt(0))%360;return h};
+const bg=c=>`background:linear-gradient(135deg,color-mix(in srgb,hsl(${hue(c)} 85% 60%) 28%,var(--sf)),color-mix(in srgb,hsl(${(hue(c)+50)%360} 85% 60%) 14%,var(--sf)))`;
+const stars=r=>{const f=Math.round(r||4);return '★'.repeat(f)+'<i>'+'★'.repeat(5-f)+'</i>'};
+const disc=x=>x.o?Math.round((1-x.p/x.o)*100):0;
+function render(){
+ const cs=['همه',...new Set(P.map(x=>x.c))];
+ $('#cats').innerHTML=cs.map(c=>`<button class="ct" aria-pressed="${c===cat&&!wl}" data-c="${esc(c)}"><span>${c==='همه'?'✨':(P.find(x=>x.c===c)||{}).e}</span>${esc(c)}</button>`).join('');
+ $('#dl').innerHTML=cs.slice(1).map(c=>`<option value="${esc(c)}">`).join('');
+ const q=$('#q').value.trim(),so=$('#so').value;
+ let L=P.filter(x=>(wl?W.includes(x.id):(cat==='همه'||x.c===cat))&&x.n.includes(q));
+ L.sort((a,b)=>so==='a'?a.p-b.p:so==='e'?b.p-a.p:so==='r'?(b.r||0)-(a.r||0):(b.s||0)-(a.s||0));
+ $('#grid').innerHTML=L.length?L.map(x=>`<article class="card"><div class="pic" style="${bg(x.c)}" data-q="${x.id}" role="button" tabindex="0" aria-label="مشاهده سریع ${esc(x.n)}">${esc(x.e)}${disc(x)?`<span class="dis">${fa(disc(x))}٪</span>`:''}<button class="hrt" data-h="${x.id}" aria-label="علاقه‌مندی">${W.includes(x.id)?'❤️':'🤍'}</button></div><div class="cb"><small>${esc(x.c)}</small><b>${esc(x.n)}</b><div class="st">${stars(x.r)} <small>(${fa(x.s||0)})</small></div><div class="price">${x.o?`<span class="old">${fa(x.o)}</span>`:''}${T(x.p)}</div><button class="btn" data-a="${x.id}">افزودن به سبد</button></div></article>`).join(''):'<p>محصولی پیدا نشد. عبارت دیگری را جستجو کنید.</p>';
+ $('#wc').textContent=fa(W.length);cartUI();adminUI();
+}
+const ids=()=>Object.keys(cart).filter(i=>cart[i]>0&&P.some(x=>x.id==i));
+const sub=()=>ids().reduce((s,i)=>s+cart[i]*P.find(x=>x.id==i).p,0);
+const FREE=2000000,ship=()=>!sub()||sub()>=FREE?0:60000;
+function cartUI(){
+ const I=ids(),s=sub(),d=Math.round(s*cp),t=s-d+ship();
+ $('#cnt').textContent=fa(I.reduce((a,i)=>a+cart[i],0));
+ $('#cartL').innerHTML=I.length?I.map(i=>{const x=P.find(p=>p.id==i);return `<div class="row"><span>${esc(x.e)} ${esc(x.n)}<br><small>${T(x.p)}</small></span><span class="qty"><button data-m="${i}" aria-label="کم">−</button>${fa(cart[i])}<button data-p="${i}" aria-label="زیاد">+</button></span></div>`}).join(''):'<p>سبد خرید شما خالی است. محصولی را اضافه کنید.</p>';
+ $('#ship').innerHTML=s>=FREE?'🎉 ارسال شما رایگان شد':`${T(FREE-s)} دیگر تا ارسال رایگان<div class="pg"><i style="width:${Math.min(100,s/FREE*100)}%"></i></div>`;
+ $('#s1').textContent=T(s);$('#s2').textContent=d?'−'+T(d):'—';$('#s3').textContent=ship()?T(ship()):'رایگان';
+ $('#s4').textContent=$('#s5').textContent=T(t);$('#goPay').disabled=!I.length;sv('c2',cart);sv('w2',W);
+}
+function adminUI(){
+ const rev=O.reduce((a,o)=>a+o.t,0);
+ $('#stats').innerHTML=`<div>محصولات<b>${fa(P.length)}</b></div><div>سفارش‌ها<b>${fa(O.length)}</b></div><div>درآمد<b>${fa(rev)}</b>تومان</div>`;
+ $('#pt').innerHTML='<tr><th>نام</th><th>دسته</th><th>قیمت</th><th></th></tr>'+P.map(x=>`<tr><td>${esc(x.e)} ${esc(x.n)}</td><td>${esc(x.c)}</td><td>${T(x.p)}</td><td><button class="btn sm alt" data-d="${x.id}">حذف</button></td></tr>`).join('');
+ $('#ot').innerHTML='<tr><th>کد</th><th>مشتری</th><th>مبلغ</th><th>درگاه</th></tr>'+(O.length?O.map(o=>`<tr><td>${esc(o.id)}</td><td>${esc(o.n)}</td><td>${T(o.t)}</td><td>${esc(o.g)}</td></tr>`).join(''):'<tr><td colspan="4">هنوز سفارشی ثبت نشده است.</td></tr>');
+}
+const add=id=>{cart[id]=(cart[id]||0)+1;cartUI();toast('به سبد خرید اضافه شد')};
+document.addEventListener('click',e=>{
+ const el=e.target.closest('[data-q],button');if(!el)return;const d=el.dataset;
+ if(d.h){e.stopPropagation();const i=+d.h;W=W.includes(i)?W.filter(x=>x!==i):[...W,i];return render()}
+ if(d.q){const x=P.find(p=>p.id==d.q),D=$('#qvD');D.innerHTML=`<div class="qv" style="${bg(x.c)}">${esc(x.e)}</div><h3 style="margin:0">${esc(x.n)}</h3><div class="st">${stars(x.r)} <small>(${fa(x.s||0)} فروش)</small></div><p>${esc(x.d||'کالای اصل با ضمانت بازگشت ۷ روزه.')}</p><div class="price">${x.o?`<span class="old">${fa(x.o)}</span>`:''}${T(x.p)}</div><div style="display:flex;gap:8px"><button class="btn" data-a="${x.id}" data-close style="flex:1">افزودن به سبد</button><button class="btn alt" data-close>بستن</button></div>`;D.showModal()}
+ if(d.c){cat=d.c;wl=false;render()}
+ if(d.a)add(d.a);
+ if(d.p){cart[d.p]++;cartUI()}if(d.m){cart[d.m]--;cartUI()}
+ if(d.d){P=P.filter(x=>x.id!=d.d);sv('p2',P);render()}
+ if('close' in d)el.closest('dialog').close();
+});
+$('#q').oninput=render;$('#so').onchange=render;
+$('#cartB').onclick=()=>$('#cartD').showModal();
+$('#wlB').onclick=()=>{wl=!wl;render();toast(wl?'علاقه‌مندی‌های شما':'همه محصولات');$('#list').scrollIntoView()};
+$('#goPay').onclick=()=>{$('#cartD').close();$('#payD').showModal()};
+$('#cpb').onclick=()=>{if($('#cpi').value.trim().toUpperCase()==='OFF10'){cp=.1;toast('کد تخفیف ۱۰٪ اعمال شد')}else{cp=0;toast('کد تخفیف معتبر نیست')}cartUI()};
+$('#th').onclick=()=>{const r=document.documentElement,dk=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=dk?'light':'dark'};
+$('#admB').onclick=()=>{$('#shop').style.display='none';$('#admin').style.display='block';scrollTo(0,0)};
+$('#back').onclick=()=>{$('#admin').style.display='none';$('#shop').style.display='block'};
+$('#nf').onsubmit=e=>{e.preventDefault();$('#ne').value='';toast('عضویت شما ثبت شد')};
+$('#top').onclick=()=>scrollTo({top:0});
+addEventListener('scroll',()=>$('#top').style.display=scrollY>600?'block':'none');
+$('#addP').onclick=()=>{
+ const n=$('#an').value.trim(),p=+$('#ap').value,c=$('#ac').value.trim();
+ if(!n||!p||!c)return toast('نام، قیمت و دسته را کامل وارد کنید');
+ P.push({id:Date.now(),n,p,c,e:$('#ae').value||'📦',r:4.5,s:0});sv('p2',P);
+ ['#an','#ap','#ac'].forEach(s=>$(s).value='');render();toast('محصول اضافه شد')};
+$('#pay').onclick=()=>{
+ const n=$('#cn').value.trim(),m=$('#cm').value.trim().replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)),a=$('#ca').value.trim();
+ if(!n||!/^09\d{9}$/.test(m))return toast('نام و شماره موبایل معتبر وارد کنید');
+ if(!a)return toast('آدرس را وارد کنید');
+ const t=sub()-Math.round(sub()*cp)+ship();
+ O.unshift({id:'S'+Date.now().toString().slice(-6),n,t,g:document.querySelector('input[name=g]:checked').value});sv('o2',O);
+ cart={};cp=0;$('#payD').close();render();toast('سفارش ثبت شد. ممنون از خرید شما 🎉')};
+function tick(){const n=new Date(),e=new Date(n);e.setHours(24,0,0,0);let s=Math.floor((e-n)/1e3);
+ const p=x=>String(x).padStart(2,'0'),h=Math.floor(s/3600),m=Math.floor(s%3600/60);
+ $('#cd').innerHTML=`<div>${p(h)}<small>ساعت</small></div><div>${p(m)}<small>دقیقه</small></div><div>${p(s%60)}<small>ثانیه</small></div>`}
+tick();setInterval(tick,1000);render();
+</script>
+</body>
+</html>
